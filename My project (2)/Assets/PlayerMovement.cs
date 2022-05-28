@@ -1,4 +1,4 @@
-using System.Collections;
+=3-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +6,13 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed;
+
+    public float groundDrag;
+
+    [Header("Ground Check")]
+    public float playerHeight;
+    public LayerMask whatIsGround;
+    bool grounded;
 
     public Transform orientation;
 
